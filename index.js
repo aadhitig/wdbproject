@@ -33,9 +33,6 @@ app.get('/', function (req, res) {
     return Matchings;
   })
 
-
-// post request body
-// request is our temporary name
 app.post('/', function (req, res) {
     if (res.keys()[0].equals("cat")) {
         newCats.push(res[res.keys()[0]]);
